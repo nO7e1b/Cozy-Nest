@@ -8,24 +8,32 @@
     <script src="https://kit.fontawesome.com/cadc3a8b03.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar-white">
-        <img src="img/logo3.png" alt="Logo" class="logo">
+    <nav id="navBar" class="navbar-white">
+        <a href="index.html">
+            <img src="img/logo3.png" alt="Logo" class="logo"></a>
         <ul class="nav-links">
             <li><a href="#" class="active">Popular</a></li>
             <li><a href="#">Travel</a></li>
-            <li><a href="#">Packages</a></li>
+            <li><a href="listings.html">Listings</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
     </nav>
     <div class="house-details">
         <div class="house-title">
-            <h1>Wenge House</h1>
+            <h1>White Villas</h1>
             <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
                 <div>
                     <span>245 Reviews</span>
                 </div>
                 <div>
-                    <p>Location:...</p>
+                    <p>Location: Ferizaj, Jezerc</p>
                 </div>
             </div>
         </div>
@@ -57,6 +65,76 @@
             </div>
             <button type="submit">Check Availability</button>
         </form>
+
+        <ul class="details-list">
+            <li><i class="fa-solid fa-house"></i>Entire home
+                <span>You will have the entire flat</span>
+            </li>
+            <li><i class="fa-solid fa-broom"></i>Enhanced Clean
+                <span>This host has commited to Cozy Nest's cleanig policy</span>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>Great Location
+                <span>90% of the guests have given the loctaion a 5 star rating</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Amazing Check-in Experience
+                <span>100% of the guests gave the check-in process a 5 star rating</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <div class="welcome-message">
+            <h3>Check-In Information:</h3>
+            <p>We're thrilled to host you! To ensure a smooth and enjoyable check-in experience, please note the following:</p>
+            <ol>
+                <li><strong>Check-In Time:</strong> Your room will be ready for you from [check-in time, e.g., 3:00 PM] onwards...</li>
+                <li><strong>Required Documents:</strong> Please have a valid photo ID and your reservation confirmation ready...</li>
+                <li><strong>Check-In:</strong> Our friendly hosts will welcome you to the desired accommodation and assist you...</li>
+                <li><strong>Contact Us:</strong> For any questions or assistance prior to your arrival please contact us</li>
+            </ol>
+            <p>We look forward to welcoming you and wish you a comfortable and memorable stay at Cozy Nest!</p>
+        </div>
+
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.18123934951!2d20.990220676684814!3d42.35997663510598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13538310be36a281%3A0x663bfc6ff38dbc0d!2sWhite%20Villas!5e0!3m2!1sen!2s!4v1701353416257!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="line">
+
+        <div class="host">
+            <img src="img/host.jpg">
+            <div>
+                <h2>Hosted by White Villas</h2>
+                <p><span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </span><span>245 reviews</span>&nbsp;&nbsp;Response rate 100%&nbsp;&nbsp;Response time: 60 min</p>
+            </p>
+            <a href="#" class="host-contact">Contact Host</a>
+            </div>
+        </div>
+    
+        
+
+
+    <div class="footer">
+        <a href="#"><i><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#"><i><i class="fa-brands fa-x-twitter"></i></i></a>
+        <a href="#"><i><i class="fa-brands fa-instagram"></i></i></a>
+        <hr>
+        <p>Copyright @ 2023, Cozy Nest</p>
     </div>
+
+    <script>
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+document.querySelector('.nav-links').classList.toggle('nav-active');
+});
+    </script>
 </body>
 </html>

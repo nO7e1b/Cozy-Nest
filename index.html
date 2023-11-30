@@ -8,16 +8,18 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/cadc3a8b03.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="main-page">
 
     <div class="header">
 
         <nav id="navBar">
-            <img src="img/logo3.png"  class="logo">
+            <a href="index.html">
+                <img src="img/logo3.png"  class="logo">
+            </a>
             <ul class="nav-links">
-                <li><a href="#" class="active">Popular</a></li>
+                <li><a href="#Popular" class="active">Popular</a></li>
                 <li><a href="#">Travel</a></li>
-                <li><a href="#">Packages</a></li>
+                <li><a href="listings.html">Listings</a></li>
             </ul>
             <a href="#" class="register-btn">Register Now</a>
             <i class="fa-solid fa-bars" onclick="toggelbtn()"></i>
@@ -128,7 +130,7 @@
             </div>
         </div>
 
-        <h2 class="sub-title">Trending</h2>
+        <h2 class="sub-title" id="Popular">Popular</h2>
         <div class="trending">
             <div>
                 <img src="img/dubai.png">

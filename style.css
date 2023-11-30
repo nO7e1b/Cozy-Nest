@@ -48,6 +48,10 @@ nav {
 
 }
 
+.main-page .active:after{
+    background: #fff;
+}
+
 .container {
     padding: 0 50px;
 }
@@ -61,27 +65,27 @@ nav {
 }
 
 .search-bar {
-    background-color: #fff;
+    background: #fff;
     width: 70%;
     margin: 30px auto;
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
 }
 
-.search-bar form {
+.search-bar form{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.search-bar form input {
+.search-bar form input{
     display: block;
     border: 0;
     outline: none;
     background: transparent;
 }
 
-.search-bar form button {
+.search-bar form button{
     background: #ff5631;
     width: 55px;
     height: 55px;
@@ -90,6 +94,7 @@ nav {
     cursor: pointer;
     outline: none;
 }
+
 
 .search-bar form button img {
     width: 15px;
@@ -497,7 +502,7 @@ nav.navbar-white .fa-bars{
     font-weight: 500;
 }
 
-.small-details{
+.small-details h4{
     text-align: right;
     font-size: 22px;
 }
@@ -520,6 +525,7 @@ nav.navbar-white .fa-bars{
     flex-wrap: wrap;
     align-items: center; 
     padding: 10px 50px;
+    justify-content: flex-end;
 }
 
 .check-form label{
@@ -545,14 +551,113 @@ nav.navbar-white .fa-bars{
     width: 350px;
     border-radius: 8px;
     font-size: 16px;
+    margin-left: auto;
 }
 
 .guest-field{
     flex: 1;
 }
 
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+}
+
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+
+.details-list li span{
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.details-list li i{
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+
+.welcome-message {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(249, 249, 249, 0.7);
+    background-image: url(img/wmbanner.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-message h2, .welcome-message h3, .welcome-message p, .welcome-image ol {
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-message ol{
+    padding-left: 20px;
+}
+
+.welcome-message li {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+}
 
 
+.map{
+    margin: 50px 0;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.map h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.host{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.host img{
+    width: 80px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.host h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.host i{
+    color: #ff5631;
+}
+
+.host-contact{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 50px;
+    border: 1px solid #ff5631;
+    border-radius: 10px;
+}
 
 
 
@@ -560,6 +665,9 @@ nav.navbar-white .fa-bars{
 /*-----------------------smaller-screen --------------------*/
 
 @media only screen and (max-width: 700px) {
+
+    body{
+    
     .logo {
         width: 50px;
         position: relative;
@@ -689,6 +797,4 @@ nav.navbar-white .fa-bars{
     .exclusives div img, .trending div img, .reviews div img {
         width: 100%;
     }
-
-
-
+}
