@@ -6,7 +6,7 @@
 
 
     body {
-        height: 100vh;
+        position: relative;
         background: #f6f5f7 url(img/background-login.jpeg) no-repeat center center/cover;
         display: grid;
         place-content: center;
@@ -17,6 +17,17 @@
     --linear-grad: linear-gradient(to right, #141E30, #ff5631);
     --grad-clr1: #141E30;
     --grad-clr2: #ff5631;
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25vw;
+    max-width: 200px;
+    cursor: pointer;
 }
 
 .container{

@@ -8,7 +8,8 @@
     <script src="https://kit.fontawesome.com/cadc3a8b03.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <div class ="container" id="container">
+</div>
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form action="#">
@@ -26,11 +27,13 @@
                 <div class="infield">
                     <input type="email" placeholder="Email" name="email">
                 <label></label>
+                <span class="error-message"></span>
                 </div>
                 <div class="infield">
                     <input type="password" placeholder="Password" id="password">
                     <label></label>
                     <i class="fas fa-eye p-icon" onclick="togglePasswordVisibility(this)"></i>
+                    <span class="error-message"></span>
                 </div>
                 <button>Sign Up</button>
             </form>
@@ -48,11 +51,13 @@
                 <div class="infield">
                     <input type="email" name="email" placeholder="Email">
                     <label></label>
+                    <span class="error-message"></span>
                 </div>
                 <div class="infield">
                     <input type="password" placeholder="Password" id="password">
                     <label></label>
                     <i class="fas fa-eye p-icon" onclick="togglePasswordVisibility(this)"></i>
+                    <span class="error-message"></span>
                 </div>
                 <a href="#" class="forgot-pass">I forgot my password</a>
                 <button>Sign In</button>
