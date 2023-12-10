@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/cadc3a8b03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or fill out the forms manually</span>
+                <div class="infield">
+                    <input type="text" placeholder="Name">
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email">
+                <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" id="password">
+                    <label></label>
+                    <i class="fas fa-eye p-icon" onclick="togglePasswordVisibility(this)"></i>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        
+        <div class="form-container sign-in">
+            <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use existing account</span>
+                <div class="infield">
+                    <input type="email" name="email" placeholder="Email">
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" id="password">
+                    <label></label>
+                    <i class="fas fa-eye p-icon" onclick="togglePasswordVisibility(this)"></i>
+                </div>
+                <a href="#" class="forgot-pass">I forgot my password</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-p overlay-left">
+                    <h1>Welcome back!</h1>
+                    <p>To continue surfing our services please login using your existing account</p>
+                    <button>Sign In</button>               
+                </div>
+                <div class="overlay-p overlay-right">
+                    <h1>Hello, Human!</h1>
+                    <p>Enter your details and start a journey with us</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <button id="overlayBtn" class="btnScaled"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
