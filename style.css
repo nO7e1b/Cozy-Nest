@@ -294,6 +294,11 @@ nav .fa-bars{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
+.listings-page .navbar-white .nav-links li a:hover {
+    color: #ff5631;
+    border-bottom: 3px solid #ff5631;
+}
+
 .navbar-white .nav-links li a{
     color: black;
 
